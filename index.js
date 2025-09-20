@@ -1,11 +1,13 @@
 import chalk from "chalk";
 import express from "express";
 import mongoose from "mongoose";
+import cors from "cors";
 import { todoModel } from "./model/todoSchema.js"; // ✅ import todo schema
 
 const app = express();
 const PORT = 6000;
 
+app.use(cors());
 app.use(express.json());
 
 // ✅ MongoDB URI
