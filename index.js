@@ -9,6 +9,9 @@ const PORT = 6000;
 
 app.use(cors());
 app.use(express.json());
+app.use("/api/todos", todoRoutes);
+
+
 
 // ✅ MongoDB URI
 const MONGODB_URI = `mongodb+srv://admin:admintd@cluster1.cx6kmin.mongodb.net/`;
