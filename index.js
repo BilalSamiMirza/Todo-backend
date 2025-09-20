@@ -9,7 +9,7 @@ const PORT = 6000;
 
 app.use(cors());
 app.use(express.json());
-app.use("/api/todos", todoRoutes);
+
 
 
 
